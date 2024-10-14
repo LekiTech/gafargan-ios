@@ -11,6 +11,8 @@
 		250A58C32CBCFB9E007DC6A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250A58C22CBCFB9E007DC6A5 /* ContentView.swift */; };
 		250A58C52CBCFB9F007DC6A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250A58C42CBCFB9F007DC6A5 /* Assets.xcassets */; };
 		250A58C82CBCFB9F007DC6A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250A58C72CBCFB9F007DC6A5 /* Preview Assets.xcassets */; };
+		250A58E22CBCFC7E007DC6A5 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250A58E12CBCFC7E007DC6A5 /* WebView.swift */; };
+		250A58E72CBD15F5007DC6A5 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 250A58E62CBD15F5007DC6A5 /* dist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		250A58C22CBCFB9E007DC6A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		250A58C42CBCFB9F007DC6A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		250A58C72CBCFB9F007DC6A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		250A58E12CBCFC7E007DC6A5 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		250A58E62CBD15F5007DC6A5 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				250A58C22CBCFB9E007DC6A5 /* ContentView.swift */,
 				250A58C42CBCFB9F007DC6A5 /* Assets.xcassets */,
 				250A58C62CBCFB9F007DC6A5 /* Preview Content */,
+				250A58E12CBCFC7E007DC6A5 /* WebView.swift */,
+				250A58E62CBD15F5007DC6A5 /* dist */,
 			);
 			path = "gafargan-ios";
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250A58E72CBD15F5007DC6A5 /* dist in Resources */,
 				250A58C82CBCFB9F007DC6A5 /* Preview Assets.xcassets in Resources */,
 				250A58C52CBCFB9F007DC6A5 /* Assets.xcassets in Resources */,
 			);
@@ -137,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250A58E22CBCFC7E007DC6A5 /* WebView.swift in Sources */,
 				250A58C32CBCFB9E007DC6A5 /* ContentView.swift in Sources */,
 				250A58C12CBCFB9E007DC6A5 /* gafargan_iosApp.swift in Sources */,
 			);
@@ -272,19 +280,23 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gafargan-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = R8CCNG4VRS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Gafargan;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.lekitech.gafargan-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.gafargan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -297,16 +309,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"gafargan-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = TS5K4P3758;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Gafargan;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +333,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.lekitech.gafargan-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "gafargan-ios-prod";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

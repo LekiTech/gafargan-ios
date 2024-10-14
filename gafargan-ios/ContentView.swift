@@ -8,17 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isLoading = true
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        WebView(
+            url: Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "dist")!,
+            isLoading: $isLoading
+        )
+//        .ignoresSafeArea()
+        
+        if isLoading {
+            ZStack {
+                Color.white.opacity(0.8)
+                    .edgesIgnoringSafeArea(.all)
+                VStack {
+//                    Spacer()
+                    HStack {
+                        ProgressView()
+                        Text("Ппарзава")
+                            .font(.headline)
+                            .padding(.leading, 10)
+                    }
+                    Spacer()
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            }
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView()
+//}
