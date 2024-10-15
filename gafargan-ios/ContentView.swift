@@ -15,25 +15,27 @@ struct ContentView: View {
             url: Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "dist")!,
             isLoading: $isLoading
         )
-//        .ignoresSafeArea()
-        
-        if isLoading {
-            ZStack {
-                Color.white.opacity(0.8)
-                    .edgesIgnoringSafeArea(.all)
-                VStack {
-//                    Spacer()
-                    HStack {
-                        ProgressView()
-                        Text("Ппарзава")
-                            .font(.headline)
-                            .padding(.leading, 10)
+        .overlay {
+            if isLoading {
+                ZStack {
+                    Color.white.opacity(0.8)
+                        .edgesIgnoringSafeArea(.all)
+                    VStack {
+                        Spacer()
+                        HStack {
+                            ProgressView()
+                            Text("Ппарзава")
+                                .font(.headline)
+                                .padding(.leading, 10)
+                        }
+                        Spacer()
                     }
-                    Spacer()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
+//        .ignoresSafeArea()
+        
     }
 }
 
