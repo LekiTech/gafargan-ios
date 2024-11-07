@@ -6,9 +6,9 @@ Gafargan ("the Application") respects your privacy and is committed to protectin
 
 ## 1. Information We Collect
 
-**Version 1.0**
+**Version 1.1**
 
-As of version 1.0, the Application does not collect, store, or process any personal information from users, either locally on your device or remotely on our servers.
+As of version 1.1, the Application does not collect, store, or process any personal information from users, either locally on your device or remotely on our servers.
 
 ## 2. Changes to Information Collection
 
